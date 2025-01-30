@@ -38,12 +38,10 @@ const LogOut = () => {
           }
         } else {
           removeCookie("token");
-          window.location.href = "http://localhost:3000/";
         }
       } catch (error) {
         console.error("Error verifying cookie:", error);
         removeCookie("token");
-        window.location.href = "http://localhost:3000/";
       }
     };
 
